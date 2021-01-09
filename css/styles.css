@@ -106,10 +106,15 @@ body{
         margin-left: -9px;
     }
 
-    .top-tranding-section .section-title .trand-heading{
-        font-weight: bold;
-        font-size: 10px !important;
-    
+    .slider-section .inner-banner-item .item-info h4{
+        font-size: 18px !important;
+    }
+    .slider-section .inner-banner-item .item-info h1{
+        font-size: 25px !important;
+    }
+
+    .slider-section .inner-banner-item .item-picture img{
+        height: 100% !important;
     }
     
 }
