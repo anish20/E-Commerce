@@ -11,7 +11,9 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href=" https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
    <link href="css/icofont.min.css" rel="stylesheet">
+   <link href="css/searchbar.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/incon2.png"  />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>E-Cloth Store</title>
   </head>
   <body>
@@ -56,7 +58,23 @@
                 <li class="nav-item"><a class="nav-link text-white" href="#"> Contact Us </a></li>
               </ul>	
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link text-white" href="#"> <i class="icofont-ui-search icofont-1x"></i></a></li>
+              <li class="nav-item">
+                <a class="nav-link text-white search-open" href="javascript:void(0)"  > <i class="icofont-ui-search icofont-1x"></i></a>
+                <div class="searching">
+                  <div class="search-inline">
+                       <form>
+                           <input type="text" class="form-control" placeholder="Searching...">
+                           <button type="submit">
+                               <i class="fa fa-search"></i>
+                           </button>
+                           <a href="javascript:void(0)" class="search-close">
+                               <i class="fa fa-times text-danger" ></i>
+                           </a>
+                       </form>
+                   </div>
+               </div>
+              
+              </li>
               <li class="nav-item"><a class="nav-link text-white" href="#"> Cart <i class="icofont-shopping-cart icofont-1x"></i><sup><span class="badge badge-danger">1</span></sup> </a></li>
               
             </ul>
@@ -464,6 +482,19 @@
       }   
   });
 
+// Searchbar script
+           var sp = document.querySelector('.search-open');
+            var searchbar = document.querySelector('.search-inline');
+            var shclose = document.querySelector('.search-close');
+            function changeClass() {
+                searchbar.classList.add('search-visible');
+            }
+            function closesearch() {
+                searchbar.classList.remove('search-visible');
+            }
+            sp.addEventListener('click', changeClass);
+            shclose.addEventListener('click', closesearch);
+                
 
 </script>  
 </body>

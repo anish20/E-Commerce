@@ -207,6 +207,7 @@ body{
 .section-footer aside ul li a:hover{ text-decoration: none;}
 
 @media(min-width:300px) and (max-width:800px){
+   
     .contact-bar .top-right-contact{
         float: left;
     }
