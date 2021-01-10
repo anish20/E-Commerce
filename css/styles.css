@@ -203,6 +203,8 @@ body{
     border-radius: 0;
 }
 
+.section-footer aside ul li a{ color: white;}
+.section-footer aside ul li a:hover{ text-decoration: none;}
 
 @media(min-width:300px) and (max-width:800px){
     .contact-bar .top-right-contact{
