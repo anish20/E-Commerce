@@ -307,5 +307,8 @@ body{
         left: 0;
         display: block;
     }
+    .login-section form {
+        width: unset;
+    }
     
 }
