@@ -83,65 +83,54 @@
         </nav>
     </header>
     <!-- Slider -->
-   <div class="login-section">
+   <div class="cart-section">
     <div class="container">
-        
-        <div class="card bg-light">
-        <article class="card-body mx-auto" style="max-width: 400px;">
-            <h4 class="card-title mt-3 text-center">Create New Account</h4>
-           
-            <form>
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                 </div>
-                <input name="" class="form-control" placeholder="Full name" type="text">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-                 </div>
-                <input name="" class="form-control" placeholder="Email address" type="email">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
-                </div>
-               
-                <input name="" class="form-control" placeholder="Phone number" type="text">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-users"></i> </span>
-                </div>
-                <select class="form-control">
-                    <option selected=""> Select gender </option>
-                    <option>Male</option>
-                    <option>Female</option>
-                    <option>Transgender</option>
-                </select>
-            </div> <!-- form-group end.// -->
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                </div>
-                <input class="form-control" placeholder="Create password" type="password">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                </div>
-                <input class="form-control" placeholder="Repeat password" type="password">
-            </div> <!-- form-group// -->                                      
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
-            </div> <!-- form-group// -->      
-            <p class="text-center">Have an account? <a href="https://anish20.github.io/E-Commerce-Demo/login.html">Log In</a> </p>                                                                 
-        </form>
-        </article>
-        </div> <!-- card.// -->
-        
-        </div> 
+        <h3>Shopping Cart</h3>
+        <table id="cart" class="table table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th style="width:50%">Product</th>
+                                <th style="width:10%">Price</th>
+                                <th style="width:8%">Quantity</th>
+                                <th style="width:22%" class="text-center">Subtotal</th>
+                                <th style="width:10%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-th="Product">
+                                    <div class="row product-info">
+                                        <div class="col-sm-2 hidden-xs"><img src="images/shirt-for-men.png" alt="..." class="img-fluid"/></div>
+                                        <div class="col-sm-10">
+                                            <h4 class="nomargin">Product 1</h4>
+                                            <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-th="Price">$1.99</td>
+                                <td data-th="Quantity">
+                                    <input type="number" class="form-control text-center" value="1">
+                                </td>
+                                <td data-th="Subtotal" class="text-center">1.99</td>
+                                <td class="actions" data-th="">
+                                    <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                                    <button class="btn btn-danger btn-sm delete-btn"><i class="fa fa-trash-o"></i></button>								
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="visible-xs">
+                                <td class="text-center"><strong>Total 1.99</strong></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+                                <td colspan="2" class="hidden-xs"></td>
+                                <td class="hidden-xs text-center"><strong>Total $1.99</strong></td>
+                                <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+    </div>
    </div>
 <!---Facility-->
 <div class="facility-service">

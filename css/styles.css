@@ -211,6 +211,7 @@ body{
     margin-bottom: 20px;
 }
 
+
 .divider-text {
     position: relative;
     text-align: center;
@@ -259,6 +260,17 @@ body{
 .login-section form{
     width: 350px;
 }
+
+.cart-section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cart-section .table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+
+
 
 @media(min-width:300px) and (max-width:800px){
    
@@ -310,7 +322,42 @@ body{
     .login-section form {
         width: unset;
 
-        
+
     }
+
     
+   
+    .cart-section  table#cart tbody td .form-control{
+		width:20%;
+		display: inline !important;
+	}
+	.cart-section  .actions .btn{
+		width:36%;
+		margin:1.5em 0;
+	}
+	
+	.cart-section  .actions .btn-info{
+		float:left;
+	}
+	.cart-section  .actions .btn-danger{
+		float:right;
+	}
+	
+	.cart-section  table#cart thead { display: none; }
+	.cart-section  table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
+	.cart-section  table#cart tbody tr td:first-child { background: #333; color: #fff; }
+	.cart-section  table#cart tbody td:before {
+		content: attr(data-th); font-weight: bold;
+		display: inline-block; width: 8rem;
+	}
+	
+	
+	
+	table#cart tfoot td{display:block; }
+    table#cart tfoot td .btn{display:block;}
+    
+    .product-info img{
+        width: 30% !important; 
+    }
+    .actions .delete-btn{margin-top: -3px !important;}
 }
