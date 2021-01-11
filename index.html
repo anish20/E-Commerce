@@ -347,6 +347,7 @@
         
     </div>
   </div>  
+  </div>
   <br>
 
 <!---Facility-->
@@ -414,8 +415,6 @@
     </div>
   </div>
 </section>
-
-
 
 <!---footer-->
 <footer class="section-footer border-top bg-dark" style="overflow: hidden;">
@@ -490,6 +489,8 @@
 	</div><!-- //container -->
 </footer>
 
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -504,7 +505,7 @@
      if ($(this).scrollTop() > 20) {
         $('#navbar_top').addClass("fixed-top");
         // add padding top to show content behind navbar
-        $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+        // $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
          $('#navbar_top').addClass('animated fadeInDown');
          $(".contact-bar").css("display","none");
 
@@ -513,7 +514,7 @@
         $('#navbar_top').removeClass('fadeInDown');
         $('#navbar_top').removeClass("fixed-top");
          // remove padding top from body
-        $('body').css('padding-top', '0');
+        // $('body').css('padding-top', '0');
         $('#navbar_top').addClass('animated fadeIn');
       }   
   });

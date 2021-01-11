@@ -295,7 +295,7 @@
      if ($(this).scrollTop() > 20) {
         $('#navbar_top').addClass("fixed-top");
         // add padding top to show content behind navbar
-        $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+        // $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
          $('#navbar_top').addClass('animated fadeInDown');
          $(".contact-bar").css("display","none");
 
@@ -304,7 +304,7 @@
         $('#navbar_top').removeClass('fadeInDown');
         $('#navbar_top').removeClass("fixed-top");
          // remove padding top from body
-        $('body').css('padding-top', '0');
+        // $('body').css('padding-top', '0');
         $('#navbar_top').addClass('animated fadeIn');
       }   
   });
