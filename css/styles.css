@@ -256,6 +256,10 @@ body{
     
 }
 
+.login-section form{
+    width: 350px;
+}
+
 @media(min-width:300px) and (max-width:800px){
    
     .contact-bar .top-right-contact{
